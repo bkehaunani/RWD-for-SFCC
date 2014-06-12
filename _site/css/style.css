@@ -210,7 +210,7 @@
 	line-height: 1.25;
 	margin: -50px 0 0 0;
 	padding: .15em;
-	top: 20%;
+	top: 15%;
 	-webkit-backface-visibility: hidden;
 }
 .st-panel h3 {
@@ -300,13 +300,13 @@
 	padding: 1em;
 	width: 80%;
 	left: 10%;
-	top: 35%;
+	top: 30%;
 	margin: 10px 0 0 0;
 	-webkit-backface-visibility: hidden;
 }
 .st-panel p,
 .st-panel ul {
-	width: 80%;
+	width: 90%;
 	text-align: left;
 	padding: 0 1em;
 }
@@ -415,7 +415,10 @@
 
 @media screen and (max-width: 520px) {
 	.st-panel h2 {
-		font-size: 42px;
+		font-size: 3em;
+	}
+	.st-panel h3 {
+		font-size: 1.75em;
 	}
 	
 	.st-panel p {
@@ -432,19 +435,39 @@
 	.st-container > a {
 		font-size: 10px;
 	}
-	
-	.st-deco{
-		width: 120px;
-		height: 120px;
-		margin-left: -60px;
+	.st-panel h2 {
+		width: 100%;
+		font-size: 1.5em;
+		top: 0;
+		left: 0;
+		margin-top: 0;
+	}
+	.st-panel h3 {
+		font-size: 1em;
 	}
 	
-	[data-icon]:after {
-		font-size: 60px;
-		-webkit-transform: rotate(-45deg) translateY(15%);
-		-moz-transform: rotate(-45deg) translateY(15%);
-		-o-transform: rotate(-45deg) translateY(15%);
-		-ms-transform: rotate(-45deg) translateY(15%);
-		transform: rotate(-45deg) translateY(15%);
+	.st-deco,
+	.intro {
+		display: none;
 	}
+	.st-panel article {
+	position: absolute;
+	text-align: center;
+	font-size: .75em;
+	line-height: 1.25;
+	padding: .5em;
+	width: 90%;
+	left: 3%;
+	top: 20%;
+	margin: 10px 0 0 0;
+	-webkit-backface-visibility: hidden;
+	}
+	.st-panel p,
+	.st-panel ul {
+	width: 100%;
+	text-align: left;
+	padding: 0.5em;
+	}
+	
+	
 }
