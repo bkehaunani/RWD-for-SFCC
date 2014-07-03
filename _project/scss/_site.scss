@@ -1,0 +1,106 @@
+/******************************************************************
+Site Name: Purple Paisley Productions
+Author: Brianna Kirkland
+
+Stylesheet: Site
+
+These are site-wide, device-independent, global styles. It's 
+called after the stylesheets that set styles for page elements.
+******************************************************************/
+
+
+/*********************
+VIEWPORTS
+*********************/
+/*
+
+@-webkit-viewport { 
+width : device-width; }
+
+@-moz-viewport { 
+width : device-width; }
+
+@-ms-viewport { 
+width : device-width; }
+
+@-o-viewport { 
+width : device-width; }
+
+@viewport { 
+width : device-width; }
+*/
+
+/*********************
+ROOT STYLES
+*********************/
+
+html {
+font-size : $basefontsize;
+-webkit-overflow-scrolling : touch;
+-webkit-tap-highlight-color : lighten($basecolor, 75%);
+-webkit-text-size-adjust : 100%;
+-ms-text-size-adjust : 100%; }
+
+body {
+margin : 0;
+padding : 0;
+width : 100%;
+font-family : $basefont;
+line-height : $baselineheight;
+color : $textcolor; }
+
+
+/*********************
+TEXTURE
+*********************/
+
+::selection {
+	background: lighten($grey, 30%);
+	color: $black;
+}
+::-moz-selection {
+	background: lighten($grey, 30%);
+	color: $black;
+}
+
+/*********************
+LINK STYLES
+*********************/
+
+a:link,
+a:visited {
+	color: $linkcolor;
+	text-decoration: none;
+	border-bottom: 1px dashed $linkcolor;
+	@include transition;
+}
+
+a:hover,
+a:active {
+	color: $linkcolorhover;
+	text-decoration: none;
+	border-bottom: 1px dashed $linkcolor;
+}
+
+
+/*********************
+LAYOUT                
+*********************/
+
+
+/*********************
+VENDOR-SPECIFIC  
+*********************/
+
+
+
+/*********************
+ MODERNIZR 
+*********************/
+
+
+
+/*********************
+TEMPLATE SPECIFICS
+*********************/
+
